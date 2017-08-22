@@ -1,0 +1,90 @@
+<html>
+  <head></head>
+
+  <body>
+    <form>
+      <div>
+        <label for="nombre">Nombre</label>
+        <input minlength="3" maxlength="15" type="text" name="nombre" id="nombre" placeholder="escribí tu nombre">
+      </div>
+
+      <div>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="escribí tu apellido" required>
+      </div>
+      <div>
+        <label for="edad">Edad</label>
+        <input min="18" max="99" type="number" name="edad" id="edad" placeholder="escribí tu edad" value="18">
+      </div>
+
+      <div>
+        <label for="nacimiento">nacimiento</label>
+        <input type="date" id="nacimiento" name="nacimiento" required>
+      </div>
+
+      <div>
+        <label for="algoconrange">algo con rango</label>
+        <input min="4" type="range" id="algoconrange" name="algoconrange" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input placeholder="escribí tu email" type="email" name="email" id="email">
+      </div>
+
+      <div>
+        <label for="mensaje">Mensaje</label>
+
+        <textarea placeholder="escribí algún mensaje" id="mensaje" required></textarea>
+      </div>
+
+      <div>
+        <input id="terminosycondiciones" type="checkbox" name="terminosycondiciones" required>
+
+        <label for="terminosycondiciones">
+          acepta terminos y condiciones
+        </label>
+      </div>
+
+      <div>
+        <input id="terminosycondiciones-si" type="radio" name="terminosycondiciones" required checked="true">
+        <label for="terminosycondiciones-si">
+          si
+        </label>
+
+        <input id="terminosycondiciones-no" type="radio" name="terminosycondiciones" required>
+        <label for="terminosycondiciones-no">
+          no
+        </label>
+      </div>
+
+      <div>
+        <input type="file" name="foto" required>
+      </div>
+
+      <div>
+        <label for="algoqueseseleccione">seleccioná algo</label>
+        <select id="algoqueseseleccione" name="algoqueseseleccione" required>
+          <option >opción 1</option>
+          <option selected="true">opción 2</option>
+          <option>opción 3</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit">
+          enviar
+        </button>
+
+        <button type="reset">
+          limpiar
+        </button>
+
+        <button type="button">
+          no hago nada
+        </button>
+      </div>
+
+    </form>
+  </body>
+</html>
